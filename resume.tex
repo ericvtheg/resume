@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Multi Columns
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\normalsize{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c r}
+  \textbf{\href{https://github.com/ericvtheg/}{\Large Eric Ventor}} & (818) 398-4136 & \href{https://github.com/ericvtheg}{GitHub.com/ericvtheg}  \\
+  {Los Angeles, California} & \href{mailto:ericventor97gmail.com}{ericventor97@gmail.com} &  \href{https://www.linkedin.com/in/ericventor/}LinkedIn.com/in/ericventor \\
+\end{tabular*}
+
+%-----------OBJECTIVE-----------------
+\section{Objective}
+	{Engineer experienced in creating intuitive and robust systems looking to continue growing with my colleagues.}
+%
+%--------ADDITIONAL SKILLS------------
+\section{Technical Expertise}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Primary Languages}{: Typescript (Node.js \& React), Python3, and SQL (Postgres)}}
+%      SAML
+     \item{
+      \textbf{Technologies}{: AWS, MongoDB, Serverless, GraphQL, Datadog, Elasticsearch, Jest, Docker, Git, and CI/CD }}
+    \item{
+      \textbf{AWS Services}{: Lambda, DynamoDB, API Gateway, SNS, SQS, RDS, IAM, S3, and CloudFormation}}
+%     \item{
+%      \textbf{Miscellaneous}{: SDLC, Comfortable with Legacy Tech, UX/UI, unit testing, leader, soft skills, great with constructive criticism, and SEO}}
+  \resumeSubHeadingListEnd
+  
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Full Stack Developer}{Apr. 2021 - Present}
+      {iFit Health \& Fitness - Platform Division}{Remote}
+      \resumeItemListStart
+         \resumeItem{SQL Query Optimizations}
+	  {Improved query performance by several orders of magnitude through my Postgres expertise. Reducing endpoint latency significantly.}
+	\resumeItem{Massive Scaling}
+	  {Helped build and maintain a service that is capable of processing and saving 100,000 concurrent POST requests simultaneously.}
+        \resumeItem{Massive Data Aggregation}
+          {Created a service using MongoDB that aggregates terabytes of data proactively. Allowing downstream consumers to receive incredibly large aggregations with millisecond latency.}
+        \resumeItem{Production Deployments}
+          {Make use of canary deployments, feature flags, and alarms in order to mitigate risk in production deployments.}  
+        \resumeItem{Best Practices}
+	{Take passion in following best practices such as SOLID, DRY, and OOP to create maintainable, efficient, and readable code.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+    {Media Software Engineer} {Jul. 2020 - Apr. 2021}
+    {Disney - Media \& Entertainment Distribution}{Remote}
+    \resumeItemListStart
+       \resumeItem{Media Hub SaaS}
+        {Responsible for maintaining and contributing to an Emmy award winning web app used as a daily driver for over a thousand Disney employees. }
+        % Web app uses Node.js, Vue.js, along with a cloud native serverless backend. The platform provides a single pane view for media content upload, processing, and delivery.
+       \resumeItem{Cloud Architect}
+        {Enable Media Operation users by architecting scalable, distributed systems using infrastructure as code such as AWS CloudFormation - capable of seamlessly scaling to necessary throughput.}
+        \resumeItem{Serverless Developer}
+        {Deploy serverless AWS technologies such as Lambda (Python3), SQS, SNS, DynamoDB, and API Gateway using the serverless framework to quickly deliver robust, scalable, and dependable workflows.}
+        \resumeItem{RESTful CRUD API}
+       {Created a DynamoDB CRUD API compatible with any table using Python3 Lambdas and API Gateway. API is heavily used, fully optimized, and adds functionality such as pseudo joins, ID generation, and JSON:API response format.}
+       \resumeItem{Legacy Code M2 Deprecation}
+        {Saved tens of thousands in monthly overhead by leading the migration of a monolithic server into a carefully designed modern serverless event driven architecture.}
+      %\resumeItem{Agile Methodologies}
+      %{Follow agile methodologies for frequent and effective code contributions.}
+      
+	%     \resumeItem{Technical Documentation}
+%        {Accompany pragmatic code with well written documentation for seamless handoffs.}
+        % security
+        % testing
+        % teamwork
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Fullstack Engineer} {Feb. 2019 - Jul. 2020}
+    {Sphere Influencer - Social Media Marketing}{Los Angeles, CA}
+    \resumeItemListStart
+       \resumeItem{Mona SaaS}
+       {Enabled service based monthly income by building a full stack web app using React along with a serverless backend (Lambda/DynamoDB/API Gateway/SQS/SNS) accompanied by Elasticsearch to fulfill clients' influencer search and campaign needs.}
+%      \resumeItem{Large Scale Connecting}
+   %      {Enabled niche targeted influencer marketing through a large scale scraping effort using Python3 scripts hosted on EC2s to make use of public geospatial data. Scrapers communicated with each other for optimal use of time and network requests.} 
+     % \resumeItem{NoSQL Databases}
+       % {Migrated from SQL to NoSQL. Designed DynamoDB table schemas to efficiently fulfill all necessary access patterns for millions of records. }
+        % Allowed for extremely fast and scalable CRUD operations - able to accommodate 25,000+ read and writes per second with no performance impact.
+%      \resumeItem{Relational Databases}
+   %     {Designed a non-trivial SQL schema that held over 1,000,000+ entries. Maximized efficiency utilizing database fundamentals including normalization, foreign keys, stored procedures, and effective indexing.}
+   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Monorepo}
+    {Lead the deprecation of a monolithic sever by diagramming workflows and architecting a serverless solution. Solution includes Lambda, S3, API Gateway, SNS, SQS, and DynamoDB.}
+  %  \resumeSubItem{Legacy Code M2 Deprecation}
+   % {Lead the deprecation of a monolithic sever by diagramming workflows and architecting a serverless solution. Solution includes Lambda, S3, API Gateway, SNS, SQS, and DynamoDB.}
+    
+%    \resumeSubItem{Sphere's Mona SaaS}
+  %  {Architected and implemented a fullstack React web app using Stripe, Lambda, API Gateway, Elasticsearch, DynamoDB, and Cognito. Software allowed users to conduct influencer marketing campaigns.}
+    
+  %  \resumeSubItem{RBI Backend}
+%    {Created and designed a PHP backend with SQL. Website acts as a middle man pairing users with lawyers. Backend tracks ongoing cases until completion then sends an invoice for commission.}
+    
+ \resumeSubHeadingListEnd
+ 
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {Bachelors of Science in Computer Science}{Sept. 2015 - Jun. 2019}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
