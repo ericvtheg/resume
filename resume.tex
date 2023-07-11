@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -20,6 +20,7 @@
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
+\setlength{\footskip}{4.35004pt}
 
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -39,7 +40,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Multi Columns
@@ -82,24 +83,42 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c r}
   \textbf{\href{https://github.com/ericvtheg/}{\Large Eric Ventor}} & (818) 398-4136 & \href{https://github.com/ericvtheg}{GitHub.com/ericvtheg}  \\
-  {Los Angeles, California} & \href{mailto:ericventor97gmail.com}{ericventor97@gmail.com} &  \href{https://www.linkedin.com/in/ericventor/}LinkedIn.com/in/ericventor \\
+  {Los Angeles, California} & \href{mailto:ericventor97gmail.com}{ericventor97@gmail.com} & \href{https://www.linkedin.com/in/ericventor}{LinkedIn.com/in/ericventor} \\
 \end{tabular*}
 
 %-----------OBJECTIVE-----------------
-\section{Objective}
- {Engineer experienced in backend technologies looking to continue designing effective and user focused systems. }
+% \section{Objective}
+% {Engineer experienced in backend technologies looking to continue designing effective and user focused systems. }
 %	{Engineer experienced in creating intuitive and robust systems looking to continue growing with my colleagues.}
 %
 %--------ADDITIONAL SKILLS------------
 \section{Technical Expertise}
 \resumeSubHeadingListStart
 \item{
-            \textbf{Primary Languages}{: Typescript (Node.js, NestJS, \& React), Python3, and SQL (Postgres)}}
-%      SAML
+            \textbf{Primary Languages}{: Typescript, Python, SQL}}
+\vspace{-5pt}
 \item{
-            \textbf{Technologies}{: AWS, NestJS, ORMs, MongoDB, Mongoose, Serverless, Containers, GraphQL, Datadog, Terraform, Elasticsearch, Jest, Docker, Git, and CI/CD }}
+            \textbf{Design Patterns}{: Event driven architecture, microservices, BFF}}
+\vspace{-5pt}
 \item{
-            \textbf{AWS Services}{: Lambda, DynamoDB, API Gateway, SNS, SQS, RDS, IAM, S3, and CloudWatch, CloudFormation}}
+            \textbf{Frontend}{: React, React Router, Next.js, Vite, Tailwind CSS}}
+\vspace{-5pt}
+
+\item{
+            \textbf{Backend}{: Node.js, NestJS, REST, GraphQL, Containers, Lambda }}
+\vspace{-5pt}
+
+\item{
+            \textbf{Databases}{: PostgreSQL, DynamoDB, MongoDB, Elasticsearch}}
+\vspace{-5pt}
+
+\item{
+            \textbf{Tools}{: Docker, Terraform, Jest, Datadog, Mixpanel, GitHub Actions, Git}}
+\vspace{-5pt}
+
+\item{
+            \textbf{AWS Services}{: ECS, Kinesis, Lambda, API Gateway, SNS, SQS, RDS, IAM, S3}}
+\vspace{-5pt}
 %     \item{
 %      \textbf{Miscellaneous}{: SDLC, Comfortable with Legacy Tech, UX/UI, unit testing, leader, soft skills, great with constructive criticism, and SEO}}
 \resumeSubHeadingListEnd
@@ -109,21 +128,18 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Full Stack Developer}{Apr. 2021 - Present}
-{iFit Health \& Fitness - Platform Division}{Remote}
+{Software Engineer}{Apr. 2021 - Present}
+{iFIT - Interactive fitness}{Remote}
 \resumeItemListStart
-\resumeItem{Stuff}
-{Containers, scaling, terraform, Chainsaw, migrating from Postgres to Mongo, designed graphql schema, designed mongo schema, created tickets and epics, road mapped, collaborated on the design process with staff engineers, drove conversation with third party consultants, created thorough documentation of design, wrote elegant tested code, applied best practices, proactively learned new technologies by creating my own side projects, explored PoCs, monolith deprecation, }
 \resumeItem{SQL Query Optimizations}
-{Improved query performance by several orders of magnitude through my Postgres expertise. Reducing endpoint latency significantly.}
-\resumeItem{Massive Scaling}
-{Helped build and maintain a service that is capable of processing and saving 100,000 concurrent POST requests simultaneously.}
-\resumeItem{Massive Data Aggregation}
-{Created a service using MongoDB that aggregates terabytes of data proactively. Allowing downstream consumers to receive incredibly large aggregations with millisecond latency.}
-\resumeItem{Production Deployments}
-{Make use of canary deployments, feature flags, and alarms in order to mitigate risk in production deployments.}
-\resumeItem{Best Practices}
-{Take passion in following best practices such as SOLID, DRY, and OOP to create maintainable, efficient, and readable code.}
+{Improved query performance by 500x causing a 99\% decrease in latency.}
+\resumeItem{Observability}
+{Proactively improved reliability of alarms for better response times to incidents.}
+\resumeItem{Design Doc}
+{Collaborated with MongoDB consultants to architect the Milestone microservice. The service supports 1 million monthly users. Tech includes containers, Kinesis, MongoDB, and change streams.}
+\resumeItem{Incident Commander}
+{Took the role of incident commander in order to handle an outage with the team/org. Also presented a blameless postmortem afterwards. }
+\resumeItem{Chainsaw Service} {Redesigned and migrated a legacy service with 100 TB of data from Lambda + Postgres to NestJS + containers + MongoDB. Resulting in reduced cost, better user experience, and a more extensible codebase.}
 \resumeItemListEnd
 
 \resumeSubheading
