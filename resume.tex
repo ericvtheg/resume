@@ -72,18 +72,14 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% example resumes:
-% https://www.beamjobs.com/resumes/software-engineer-resume-examples
+%------------RESUME STARTS HERE-------------
 
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c r}
   \textbf{\href{https://github.com/ericvtheg/}{\Large Eric Ventor}} & (818) 398-4136 & \href{https://github.com/ericvtheg}{GitHub.com/ericvtheg}  \\
-  {Los Angeles, California} & \href{mailto:ericventor97gmail.com}{ericventor97@gmail.com} & \href{https://www.linkedin.com/in/ericventor}{LinkedIn.com/in/ericventor} \\
+  {Los Angeles, California} & \href{mailto:ericventor97@gmail.com}{ericventor97@gmail.com} & \href{https://www.linkedin.com/in/ericventor}{LinkedIn.com/in/ericventor} \\
 \end{tabular*}
 
 %-----------OBJECTIVE-----------------
@@ -98,17 +94,17 @@
 
 \resumeSubheading
 {Software Engineer}{Apr. 2021 - Present}
-{iFIT - Interactive fitness}{Remote}
+{iFIT - Interactive Fitness}{Remote}
 \resumeItemListStart
 \resumeItem{SQL Query Optimizations}
 {Improved query performance by 500x causing a 99\% decrease in latency.}
+\resumeItem{Chainsaw Service} {Redesigned and migrated a legacy service to MongoDB and containers, enhancing user experience and future development.}
 \resumeItem{Observability}
-{Proactively improved reliability of alarms for better response times to incidents.}
-\resumeItem{Design Doc}
-{Collaborated with MongoDB consultants to architect the Milestone microservice. The service supports 1 million monthly users. Tech includes containers, Kinesis, MongoDB, and change streams.}
+{Proactively improved reliability of alarms. Reduced noise resulting in much better response times to incidents.}
+\resumeItem{Milestone Service 2.0}
+{Collaborated with MongoDB consultants to architect the Milestone service. Enabled realtime complex stat aggregations for 1 million monthly users.}
 \resumeItem{Incident Commander}
-{Took the role of incident commander in order to handle an outage with the team/org. Also presented a blameless postmortem to the org afterwards. }
-\resumeItem{Chainsaw Service} {Redesigned and migrated a legacy service with 100 TB of data from Lambda \& Postgres to NestJS, containers, \& MongoDB. Resulting in reduced cost, better user experience, and a more extensible codebase.}
+{Assumed the role of Incident Commander, by coordinating a team response to a system outage, resulting in a timely resolution and minimal user impact. Subsequently conducted and presented a blameless postmortem to the org.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -117,11 +113,6 @@
 \resumeItemListStart
 \resumeItem{Media Hub SaaS}
 {Maintained and contributed to an Emmy award winning web app used as a daily driver for over a thousand Disney employees. }
-% Web app uses Node.js, Vue.js, along with a cloud native serverless backend. The platform provides a single pane view for media content upload, processing, and delivery.
-\resumeItem{Cloud Architect}
-{Enabled Media Operations by architecting scalable, distributed systems using IaC. Capable of seamlessly scaling to necessary throughput.}
-\resumeItem{Serverless Developer}
-{Deploy serverless AWS technologies such as Lambda (Python3), SQS, SNS, DynamoDB, and API Gateway using the serverless framework to quickly deliver robust, scalable, and dependable workflows.}
 \resumeItem{RESTful CRUD API}
 {Created a DynamoDB CRUD API compatible with any table using Python3 Lambdas and API Gateway. API is heavily used, fully optimized, and adds functionality such as pseudo joins, ID generation, and JSON:API response format.}
 \resumeItem{Legacy Service Deprecation}
@@ -168,27 +159,25 @@
 \resumeSubHeadingListStart
 \begin{multicols}{2}
   \item{
-              \textbf{Primary Languages}{: Typescript, Python, SQL}}
+              \textbf{Languages}{: Typescript, Python, SQL}}
+  \vspace{-5pt}
   \item{
               \textbf{Backend}{: Node.js, NestJS, REST, GraphQL, Containers, Lambda }}
+  \vspace{-5pt}
   \item{
-              \textbf{Frontend}{: React, React Router, Next.js, Vite, Tailwind CSS}}
+              \textbf{Frontend}{: React, Next.js, Vite, Tailwind CSS}}
+  \vspace{15pt}
   \item{
-              \textbf{Databases}{: PostgreSQL, DynamoDB, MongoDB, Elasticsearch}}
-  % \item{
-  %             \textbf{Design Patterns}{: Event driven architecture, microservices, BFF}}
-  % \vspace{-10pt}
+              \textbf{Databases}{: PostgreSQL, MongoDB, DynamoDB, Elasticsearch}}
+  \vspace{-5pt}
   \item{
-              \textbf{Tools}{: Docker, Terraform, Jest, Datadog, Git}}
+              \textbf{Tools}{: Docker, Jest, Terraform, Datadog, Git}}
+  \vspace{-5pt}
   \item{
-              \textbf{AWS Services}{: ECS, Kinesis, CloudFront, Lambda, API Gateway, SNS, SQS, RDS, IAM, S3}}
+              \textbf{AWS Services}{: RDS, S3, IAM, ECS, Lambda, Kinesis, CloudFront, SNS, SQS, API Gateway }}
 
 \end{multicols}
-\vspace{-12pt}
-
-
-
-
+\vspace{-30pt}
 
 %     \item{
 %      \textbf{Miscellaneous}{: SDLC, Comfortable with Legacy Tech, UX/UI, unit testing, leader, soft skills, great with constructive criticism, and SEO}}
